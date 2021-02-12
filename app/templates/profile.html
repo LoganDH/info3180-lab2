@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="upper-section">
+    <div class="main-profile-area">
+        <img id="profile-photo" src="{{url_for('static', filename='img/ban_captchas.jpg')}}" alt="ban-captcha-robot"> 
+        <p class="bold">Logan Halsall</p>
+        <p>@LoganDH</p>
+        <p>Kingston, Jamaica</p>
+        <p>{{ date_joined }}</p>
+    </div>
+</div>
+<div class="main-profile-area">
+    <p id="bio">Hello, I am a student at UWI studying for a BSc. in I.T. I really enjoy most of the lessons because I have a personal interest in computing. One day I will install Arch Linux, automate shell scripts, setup a server and maybe my own VPN, especially now that they are blacklisting all the VPN IPs.</p>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p class="bold">5</p>
+            <p>Posts</p>
+        </div>
+        <div class="grid-item">
+            <p class="bold">50</p>
+            <p>Following</p>
+        </div>
+        <div class="grid-item">
+            <p class="bold">50</p>
+            <p>Followers</p>
+        </div> 
+    </div>
+    <div>
+        <button class="bold" id="follow">Follow</button>
+    </div>
+</div>
+{% endblock %}
